@@ -45,13 +45,13 @@ const Instagram: React.FC = () => {
   };
 
   return (
-    <section className="h-screen flex flex-col items-center justify-center px-6 md:px-14 lg:px-28 pt-12 md:pt-20 md:pb-20 pb-10">
-      <div className="md:border-2 border-gray-500/10 px-8 py-10 max-w-sm w-full">
-        <form className="grid gap-3" onSubmit={onSubmit}>
+      <section className="h-screen flex flex-col items-center justify-center px-6 md:px-14 lg:px-28 pt-12 md:pt-20 md:pb-20 pb-10">
+      <div className="md:border-2 border-gray-500/10 px-8 py-10 max-w-[350px] w-full">
+        <form className="grid gap-2" onSubmit={onSubmit}>
           <img className="h-16 mx-auto" src={Logo} alt="Instagram" />
           <input
             required
-            className="py-3 border-2 border-gray-500/10 px-3 rounded-md bg-transparent text-sm"
+            className="p-2 border border-gray-500/30 bg-transparent text-sm"
             type="text"
             name="name"
             placeholder="Phone number, username, or email"
@@ -60,7 +60,7 @@ const Instagram: React.FC = () => {
             <input
               required
               type={type}
-              className="py-3 gap-3 border-2 border-gray-500/10 px-3 rounded-md flex-grow bg-transparent text-sm"
+              className="p-2 gap-3 border border-gray-500/30 flex-grow bg-transparent text-sm"
               name="password"
               placeholder="Password"
             />
@@ -73,7 +73,7 @@ const Instagram: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 py-2 text-lg text-white hover:bg-blue-400 rounded-md"
+            className="bg-blue-500 py-2 text-sm text-white hover:bg-blue-400 rounded-md"
           >
             Log in
           </button>
@@ -88,7 +88,7 @@ const Instagram: React.FC = () => {
           </div>
         </form>
       </div>
-      <div className="md:border-2 border-gray-500/10 px-8 md:py-5 md:mt-5 max-w-sm w-full text-center">
+      <div className="md:border-2 border-gray-500/10 px-8 md:py-5 md:mt-5 max-w-[350px] w-full text-center">
         <span className="text-sm">
           Don't have an account? {" "}
           <a href="#" className="text-blue-600 font-semibold">
